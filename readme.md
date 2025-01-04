@@ -26,7 +26,7 @@ Este projeto é um aplicativo simples de lista de tarefas baseado em linha de co
 3. Execute o programa:
     python todotasklist.py
 
-🧑‍💻 Como Usar
+## 🧑‍💻 Como Usar
 O programa apresenta um menu inicial com as opções disponíveis:
 
 0 para incluir uma nova tarefa.
@@ -39,23 +39,24 @@ Digite o número correspondente à ação que deseja realizar e pressione Enter.
 
 Siga as instruções exibidas na tela para gerenciar sua lista de tarefas.
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 .
 ├── main.py        # Código principal do programa
 └── README.md      # Documentação do projeto
 
-📈 Melhorias Futuras
+## 📈 Melhorias Futuras
 Persistência de dados: salvar as tarefas em um arquivo para que possam ser recuperadas após reiniciar o programa.
 Funcionalidade de edição: permitir que o usuário edite tarefas existentes.
 Interface gráfica: criar uma GUI para melhorar a experiência do usuário.
 Suporte para categorias: organizar tarefas em diferentes categorias.
-🤝 Contribuindo
+
+## 🤝 Contribuindo
 Contribuições são bem-vindas! Se você tiver ideias ou melhorias, fique à vontade para abrir um pull request ou relatar um problema na aba de Issues.
 
-📜 Licença
+## 📜 Licença
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
 
-👤 Autor
+## 👤 Autor
 - Felipe Cherpinski
 - LinkedIn: https://www.linkedin.com/in/felipe-cherpinski/
 - GitHub: https://github.com/cherpinskif
