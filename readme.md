@@ -18,7 +18,7 @@ Este projeto é um aplicativo simples de lista de tarefas baseado em linha de co
 ## 📦 Como Executar
 1. Clone o repositório para a sua máquina local:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/cherpinskif/todolist2.git
 
 2. Acesse a pasta do projeto::
     cd nome-do-repositorio
