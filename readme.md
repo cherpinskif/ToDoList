@@ -60,3 +60,11 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE par
 - Felipe Cherpinski
 - LinkedIn: https://www.linkedin.com/in/felipe-cherpinski/
 - GitHub: https://github.com/cherpinskif
+
+## 📬 Para dúvidas ou sugestões, entre em contato diretamente pelo LinkedIn ou GitHub!
+
+### O que ajustar:
+1. Substitua `seu-usuario`, `nome-do-repositorio`, e `Seu Nome` pelas suas informações reais.
+2. Adicione um arquivo `LICENSE` ao repositório, caso vá usar uma licença específica (como a MIT).
+
+Pronto para subir ao GitHub! 🚀 Se precisar de algo mais, só avisar! 😊
