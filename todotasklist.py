@@ -1,5 +1,6 @@
 import os
 
+general_list = []
 toDoList = []
 doneList = []
 
@@ -13,15 +14,21 @@ def menu_toDoList():
             elif escolha == 1:
                 completarAtividade()
             elif escolha == 2:
-                atividadeListadas()
+                atividadesInseridas()
             elif escolha == 3:
                 atividadesFeitas()
             elif escolha == 4:
                 excluirAtividade()
             elif escolha == 5:
-                print("Saindo...")
+                #saindo()
                 break
-            os.system("cls")
+            else:
+                os.system("cls")
+                print("------------------------------")
+                print("ERRO: Informe uma opção válida")
+                print("------------------------------")
+                menu_toDoList()
+            saindo()
             break
     except:
         os.system("cls")
@@ -34,9 +41,10 @@ def incluirAtividade():
     os.system("cls")
     incluir_atividade = input("Insira o nome da atividade: ")
     toDoList.append("{}".format(incluir_atividade))
+    general_list.append("{}".format(incluir_atividade))
     if toDoList != []:
         print("Atividade incluída com sucesso")            
-    print(toDoList[-1])
+    print(general_list[-1])
     menu_toDoList()
 
 def completarAtividade():
@@ -64,10 +72,10 @@ def completarAtividade():
                 print("{}".format(i))
     menu_toDoList()
 
-def atividadeListadas():
+def atividadesInseridas():
     os.system("cls")
     print("As atividades inseridas até o momento foram: ")
-    for i in toDoList:
+    for i in general_list:
         print(i)    
     menu_toDoList()
 
@@ -84,20 +92,29 @@ def atividadesFeitas():
 
 def excluirAtividade():
     os.system("cls")
-    i = 0
-    while i < len(toDoList):
-        print("{} - {}".format(i,toDoList))
-        i+=1
     try:
-        excluir_atividade = int(input("Informe a atividade a ser completada: "))
-        excluir_SN = int(input("A atividade {}, será excluída! \nPressione 1 para completar e 2 para voltar: ".format((toDoList[excluir_atividade]))))
-        if excluir_SN == 1:
-            toDoList.pop(excluir_atividade)
-        if excluir_SN == 2:
-            menu_toDoList()
+        if len(toDoList) == 0:
+            print("Não há nenhuma atividade a ser excluída.")
+        else:
+            i = 0
+            while i < len(toDoList):
+                print("{} - {}".format(i,toDoList[i]))
+                i+=1
+            excluir_atividade = int(input("Informe a atividade a ser completada: "))
+            excluir_SN = int(input("A atividade {}, será excluída! \nPressione 1 para completar e 2 para voltar: ".format((toDoList[excluir_atividade]))))
+            if excluir_SN == 1:
+                toDoList.pop(excluir_atividade)
+            if excluir_SN == 2:
+                menu_toDoList()
     except:
         print("Informe uma opção válida")
     menu_toDoList()
+
+def saindo():
+    os.system("cls")
+    print("Opção 5 escolhida. \nSaindo do app...")
+    
+    
 
 menu_toDoList()
 
